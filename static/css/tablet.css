@@ -1,0 +1,13 @@
+@media (min-width: 701x) and (max-width: 1200px){
+    .navbar-left input{
+        display: none;
+    }
+    .navbar-left .navbar-search{
+        width: 40px;
+    }
+    .navbar-mid-option:hover{
+        border-radius: 50%;
+    }
+}
+
+ 

@@ -1,0 +1,15 @@
+@media  (max-width: 700px) {
+    .navbar-left input{
+        display: none;
+    }
+    .navbar-left .navbar-search{
+        width: 40px;
+    }
+    .mid-option-icon{
+        display: none;
+    }
+    .navbar-mid-option:hover{
+        cursor: default;
+        width: 40px;
+    }
+}

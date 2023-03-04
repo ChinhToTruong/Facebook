@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Facebook</title>
+    <!-- icon title -->
+    <link
+      rel="shortcut icon"
+      href="../static/img/Facebook_logo.png.webp"
+      type="image/x-icon"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="../static/css/main.css" />
+  </head>
+  <body class="bg-gray">
+    <!-- login -->
+    <div
+      class="container d-flex flex-column flex-lg-row jusify-content-evenly pt-5" style="height: 80%;"
+    >
+      <!-- heading -->
+      <div class="text-center text-lg-start mt-lg-5 pt-lg-5">
+        <h1 class="text-primary fw-bold fs-0">Facebook</h1>
+        <p class="w-75 mx-auto mx-lg-0 fs-4">
+          Facebook helps you connect and share with people in your life.
+        </p>
+      </div>
+
+      <!-- form -->
+      <div style="max-width: 28rem; width: 100%">
+        <div class="bg-white shadow rounded p-3 input-group-lg">
+          <input
+            type="email"
+            class="form-control my-3"
+            placeholder="Email address or phone number"
+          />
+          <input
+            type="password"
+            class="form-control my-3"
+            placeholder="Password"
+          />
+          <a href="home.html">
+            <button class="btn btn-primary w-100 my-3">Log in</button>
+          </a>
+          <a href="#" class="text-decoration-none text-center">
+            <p>Forgotten password?</p>
+          </a>
+
+          <!-- create account -->
+          <hr />
+          <div class="text-center my-4">
+            <button
+              class="btn btn-success btn-lg"
+              data-toggle="modal"
+              data-target="#createModal"
+            >
+              Create New Account
+            </button>
+
+            <!-- create modal -->
+            <div
+              class="modal fade"
+              id="createModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="createModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <!-- head -->
+                  <div class="modal-header">
+                    <div>
+                      <h2 class="modal-title" id="createModalLabel">Sign Up</h2>
+                      <p class="text-muted fs-7 ps-3">It's quick and easy</p>
+                    </div>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true"><i class="fa-solid fa-x"></i></span>
+                    </button>
+                  </div>
+                  <!-- body -->
+                  <div class="modal-body">
+                    <form>
+                      <!-- name -->
+                      <div class="row">
+                        <div class="col">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="First name"
+                          />
+                        </div>
+                        <div class="col">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Surname"
+                          />
+                        </div>
+                      </div>
+                      <!-- email & password -->
+                      <input
+                        type="text"
+                        class="form-control my-3"
+                        placeholder="Mobile number or email address"
+                      />
+                      <input
+                        type="text"
+                        class="form-control my-3"
+                        placeholder="Password"
+                      />
+                      <!-- DDB -->
+                      <div class="row my-3">
+                        <span class="text-muted fs-7 text-start">
+                          Date of birth
+                          <i
+                            type="button"
+                            class="fa-solid fa-circle-question"
+                            data-container="body"
+                            data-toggle="popover"
+                            data-placement="right"
+                            data-content="Ting Ting."
+                          ></i>
+                        </span>
+                        <div class="col">
+                          <select class="form-select">
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="col">
+                          <select class="form-select">
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="col">
+                          <select class="form-select">
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!-- gender -->
+                      <div class="row my-3">
+                        <span class="text-muted fs-7 text-start">
+                          Gender
+                          <i
+                            type="button"
+                            class="fa-solid fa-circle-question"
+                            data-container="body"
+                            data-toggle="popover"
+                            data-placement="right"
+                            data-content="Ting Ting."
+                          ></i>
+                        </span>
+                        <div class="col">
+                          <div class="border rounded p-2">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="exampleRadios"
+                              id="exampleRadios1"
+                              value="option1"
+                              checked
+                            />
+                            <label
+                              class="form-check-label"
+                              for="exampleRadios1"
+                            >
+                              Male
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="border rounded p-2">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="exampleRadios"
+                              id="exampleRadios2"
+                              value="option2"
+                              checked
+                            />
+                            <label
+                              class="form-check-label"
+                              for="exampleRadios2"
+                            >
+                              Female
+                            </label>
+                          </div>
+                        </div>
+                        <!-- <div class="col">
+                            <div class="border rounded p-2">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="exampleRadios"
+                                id="exampleRadios3"
+                                value="option3"
+                                checked
+                              />
+                              <label
+                                class="form-check-label"
+                                for="exampleRadios3"
+                              >
+                                Custom
+                              </label>
+                            </div>
+                          </div> -->
+                      </div>
+                      <!-- gender select -->
+                      <!-- <div class="d-none" id="genderSelect">
+                        <select class="form-select">
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <div class="my-3">
+                            <span>your pronoun is visible to everyone</span>
+                            <input type="text" class="form-control" placeholder="Gender (optional)">
+                        </div>
+                      </div> -->
+
+                      <!-- disclaimer  -->
+                      <div class="text-muted fs-7">
+                        Here is all your selection.
+                      </div>
+
+                      <!-- btn -->
+                      <hr>
+                      <div class="text-center mt-3">
+                        <button
+                          type="button"
+                          class="btn btn-success btn-lg"
+                          data-dismiss="modal"
+                        >
+                          Sign Up
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tag -->
+        <div class="my-5 pb-5 text-center">
+          <p class="fw-bod">
+              <a href="#" class="text-decoration-none text-dark">Create a Page</a>
+              <span class="fw-normal"> for a celebrity, band or bussiness.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-white p-4 text-muted" style="height: 20%;">
+        <div class="container">
+            <!-- language -->
+             <div class="d-flex flex-wrap">
+                <p class="mx-2 fs-7 mb-0">English (US)</p>
+                <p class="mx-2 fs-7 mb-0">Tiếng Việt</p>
+                <p class="mx-2 fs-7 mb-0">中文(台灣)</p>
+                <p class="mx-2 fs-7 mb-0">한국어</p>
+                <p class="mx-2 fs-7 mb-0">日本語</p>  
+             </div>
+            <!-- actions -->
+            <div class="d-flex flex-wrap">
+                <p class="mx-2 fs-7 mb-0">Sign Up</p>
+                <p class="mx-2 fs-7 mb-0">Login</p>
+                <p class="mx-2 fs-7 mb-0">Messenger</p>
+                <p class="mx-2 fs-7 mb-0">Facebook</p>
+                <p class="mx-2 fs-7 mb-0">Watch</p>  
+             </div>
+            <!-- copy -->
+            <div class="mt-4 mx-2">
+                <p class="fs-7">Facebook &copy; 2022</p>
+            </div>
+        </div>
+    </footer>
+    <!-- boostrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- main js -->
+    <script src="../static/js/main.js"></script>
+  </body>
+</html>
